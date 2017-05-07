@@ -21,9 +21,10 @@ export default class AppBody extends Component {
         <Completed
           completed={this.state.completed}
         />
-        {/*<CompleteLink
+        <CompleteLink
           completed={this.state.completed}
-        />*/}
+          completeStep={this.completeStep}
+        />
       </div>
     )
   }
