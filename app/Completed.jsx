@@ -10,10 +10,9 @@ export default class Completed extends Component {
         { stepNumber == 5 ? '!' : '.'}
       </span>
     )
-    if (completed)
-      return completeContent
+    //if (completed)
+    return completeContent
 
     return null
   }
 }
-
