@@ -19,7 +19,10 @@ class AppBody extends Component {
 
     return (
       <div className="step">
-        <Step stepNumber={step}/>
+        <Step
+          stepNumber={step}
+          increaseStep={this.completeStep}
+        />
         <Completed
           completed={completed}
           stepNumber={step}
@@ -34,9 +37,16 @@ class AppBody extends Component {
 
   completeStep() {
     //dispatch call is also injected by redux
-    this.props.dispatch({
+    if (this.props.step == 5){
+      this.props.dispatch({
         type: 'TOGGLE_COMPLETE',
+      })
+    }
+    else{
+      this.props.dispatch({
+        type: 'TOGGLING',
     })
+    }
   }
 }
 
