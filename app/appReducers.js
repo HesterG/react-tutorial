@@ -13,6 +13,8 @@ function firstNumber(state=null, action) {
 
 function secondNumber(state=null, action) {
   switch(action.type) {
+    case 'INPUT_SECOND_NUMBER':
+      return action.value
     case 'RESET':
       return null
     default:
