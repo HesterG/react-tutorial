@@ -114,6 +114,7 @@ function select(state) {
     firstNumber: state.firstNumber,
     secondNumber: state.secondNumber,
     operation: state.operation,
+    result: state.result,
     reset: state.reset,
     hasError: state.hasError,
   }
