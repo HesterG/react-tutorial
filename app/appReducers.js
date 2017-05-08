@@ -11,6 +11,9 @@ function completed(state = false, action) {
 
 function step(state = 0, action) {
   switch(action.type) {
+    case 'TOGGLING':
+      state += 1
+      return state
     default:
       return state
   }
