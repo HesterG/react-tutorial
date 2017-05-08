@@ -15,11 +15,12 @@ export default class Panel extends Component {
         if (input === '=') {
           inputFn = calculate
         } else if (input === 'CE') {
+          inputFn = reset
         } else {
           inputFn = inputOperation
         }
       }
-      
+
 
       return <Button
         input={input}
